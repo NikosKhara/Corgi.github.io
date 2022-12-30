@@ -1,0 +1,382 @@
+@font-face {
+    font-family: RobotoB;
+    src: url(Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: RobotoBIt;
+    src: url(Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoTI;
+    src: url(Roboto-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoBo;
+    src: url(Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoBoI;
+    src: url(Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoI;
+    src: url(Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: RobotoL;
+    src: url(Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoLI;
+    src: url(Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoM;
+    src: url(Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoMI;
+    src: url(Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoR;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoT;
+    src: url(Roboto-thin.ttf);
+}
+
+html{
+    font-size: 25px;
+    height:4700px
+}
+
+body{
+    background:url(Pembroke-Welsh-Corgi-Leaping-in-the-Field.jpg);
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size: 100%;
+    margin:0;
+}
+
+.logo{
+    height:125px;
+    margin:0px;
+}
+
+.headerbuttons{
+    color:#fff;
+    text-decoration:none;
+    float: right;
+    margin:30px 50px;
+    position:relative;
+    font-family: RobotoR;
+    font-weight: 5;
+    margin-top:60px;
+}
+
+.headerbuttons:after{
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0px;
+    left:0px;
+    background-color: #fff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.headerbuttons:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+.headerbuttons{
+    transition: color 0.3s ease-in-out;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+    background-color:transparent;  
+    line-height: 30px;
+}
+
+header.active{
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    height: 125px;
+}
+
+.headerbuttons.active{
+    color: #000;
+}
+
+.headerbuttons.active:after{
+    color: #000;
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0px;
+    left:0px;
+    background-color: #000;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.headerbuttons.active:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+.imagesa.blue{
+    color: blue;
+}
+
+.imagesa{
+    transition: color 0.3s ease-in-out;
+}
+
+.imagesa.blue:after{
+    color: blue;
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0px;
+    left:0px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.imagesa.blue:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+.aboutlink{
+    transition: color 0.3s ease-in-out;
+}
+
+.aboutlink.blue{
+    color:blue;
+}
+
+.aboutlink.blue:after{
+    color: blue;
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0px;
+    left:0px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.aboutlink.blue:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+.before_buyinglink{
+    transition: color 0.3s ease-in-out;
+}
+
+.before_buyinglink.blue{
+    color:blue;
+}
+
+.before_buyinglink.blue:after{
+    color: blue;
+    content: '';
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0px;
+    left:0px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.before_buyinglink.blue:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+.Main-words{
+    position: absolute;
+    left: 60px;
+    bottom: 50px;
+    background:local;
+    color:#fff;
+    font-family: RobotoL;
+}
+
+.Main-words p{
+    font-size: 40px;
+    font-family: RobotoR;
+}
+
+.Main-words h1{
+    font-size: 60px;
+}
+
+#images{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    top:800px;
+    padding: 53px;
+    border: solid 15px #fff;
+}
+
+.img-img{
+    display: block;
+    position:absolute;
+    top: 800px;  
+    text-align: center;
+    left:670px; 
+    font-family: RobotoL;
+}
+
+.img1{
+    justify-self: space-between;
+    margin-top:1em;
+    border: solid 15px #fff;
+}
+
+.img2{
+    height: 380px;
+    justify-self: space-between;
+    border: solid 15px #fff;
+}
+
+.img3{
+    height: 380px;
+    justify-self: space-between;
+    border: solid 15px #fff;
+}
+
+.img4{
+    height: 260px;
+    justify-self: space-between;
+    border: solid 15px #fff;
+}
+
+.img5{
+    height: 260px;
+    justify-self: space-between;
+    border: solid 15px #fff;
+}
+
+.img6{
+    height: 260px;
+    justify-self: space-between;
+    border: solid 15px #fff;
+}
+
+.about{
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top:2200px;
+    left:320px;
+    padding-left: 300px;
+    padding-right: 300px;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    font-family: RobotoR;
+}
+
+.about h1{
+    font-family: RobotoL;
+}
+
+.before_buying{
+    position: absolute;
+    left:320px;
+    top:3600px;
+    padding-left: 300px;
+    padding-right: 300px;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    font-family: RobotoR;
+    width:300px;
+}
+
+.before_buying h1{
+    font-family: RobotoL;
+    width:400px;
+}
+
+footer{
+    background-color:#B6B6B6;
+    height:180px;
+    position: absolute;
+    top: 4650px;
+    width:100%;
+    font-family:RobotoR;
+    display: inline;
+    margin-bottom: 0px;
+    padding-bottom:0px;
+}
+
+footer p{
+    margin-top:50px;
+    margin-left:10px;
+}
+
+footer img{
+    height:50px;
+    display: inline;
+}
+
+.footerimg1{
+    position: absolute;
+    right:10px;
+    bottom: 45px;
+}
+
+.footerimg2{
+    position: absolute;
+    right:80px;
+    bottom:50px;
+}
+
+.footerimg3{
+position:absolute;
+right:150px;
+bottom:40px;
+}
